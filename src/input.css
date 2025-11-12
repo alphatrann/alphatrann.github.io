@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: InterVariable, sans-serif;
+  --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+.nav-link {
+  @apply hover:text-indigo-600 text-sm dark:text-white dark:hover:text-indigo-400 text-gray-800 font-medium block px-3 py-2;
+}
